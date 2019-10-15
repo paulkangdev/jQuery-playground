@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<link href="css/bootstrap.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Playground - Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+        <nav class="nav">
+            <ul class="nav-links">
+                <a href="index.html" rel="homepage"><li class="nav-item">Home</li></a>
+                <li class="nav-item">Other Projects
+                    <ul class="dropdown">
+                        <a href="todo.html"><li>To-Do List</li></a>
+                        <a href="calculator.html"><li>Calculator</li></a>
+                        <a href="memory.html"><li>Memory Game</li></a>
+                        <a href="quiz.html"><li>Quiz Game</li></a>
+                        <a href="graphs.html"><li>Movable Graphs</li></a>
+                    </ul>
+                </li>
+                <a href="#About" rel="internal"><li class="nav-item">About</li></a>
+                <a href="#Contact" rel="internal"><li class="nav-item">Contact Us</li></a>
+            </ul>
+            </nav>
+    <section id="main" class="main-wrapper">
+        <section class="display-wrapper">
+            <h1 class="quiz-title">Refactored jQuery/Bootstrap Quiz Game! 
+                Test My Knowledge!</h1>
+            <div class="question-display">Question Card Here</div>
+            <div class="right-banner" "correct" "incorrect" "hidden">Wrong!</div>
+            <div class="timer">Timer here</div>
+            
+            <div class="statistics-wrapper">
+                <div class="questions-remaining">X/10 Questions Remaining</div>
+                <div class="statistics-panel">
+                    <ol class="statistics-list">Player Statistics
+                        <li>Total Score: <span class="player-score">356</span></li>
+                        <li>Questions Right: <span class="questions-right">3</span> out of <span class="total-questions">10</span></li>
+                        <li>Wrong Answers Given: <span class="questions-wrong">10</span></li>
+                    </ol>
+                </div>
+                <div class="questions-completed"><img class="questions-completed">Questions Completed</div>
+            </div>
+        </section>
+        <section class="answers-wrapper">Answer section begins here
+            <ol>
+                <li class="answer-a"></li>
+                <li class="answer-b"></li>
+                <li class="answer-c"></li>
+                <li class="answer-d"></li>
+            </ol>
+            
+        
+        </section>
+    </section>
+    
+    <footer>
+    <div class="footer-container">
+        <div class="footer-column">Sweet Logo Will Go Here</div>
+        <div class="footer-column">
+            <ul>    <li>Latest News</li> 
+                    <li>Careers</li> 
+                    <li>Other Text Link Stuff</li>
+            </ul></div>
+        <div class="footer-column"> Third Column</div>    
+        
+    </div>
+    </footer>
+    <script src="js/quiz.js"></script>
+</body>
+    
+</html>
