@@ -1,2 +1,2 @@
 # jQuery-playground
-Place to learn about using jQuery
+Refactoring my websites to include jQuery as well as Bootstrap classes
