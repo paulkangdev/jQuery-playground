@@ -1,74 +1,103 @@
 <!doctype html>
 <html lang="en">
-<link href="css/bootstrap.css" rel="stylesheet">
-<head>
-    <meta charset="utf-8">
-    <title>jQuery Playground - Quiz Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-</head>
-<body>
-        <nav class="nav">
-            <ul class="nav-links">
-                <a href="index.html" rel="homepage"><li class="nav-item">Home</li></a>
-                <li class="nav-item">Other Projects
-                    <ul class="dropdown">
-                        <a href="todo.html"><li>To-Do List</li></a>
-                        <a href="calculator.html"><li>Calculator</li></a>
-                        <a href="memory.html"><li>Memory Game</li></a>
-                        <a href="quiz.html"><li>Quiz Game</li></a>
-                        <a href="graphs.html"><li>Movable Graphs</li></a>
-                    </ul>
-                </li>
-                <a href="#About" rel="internal"><li class="nav-item">About</li></a>
-                <a href="#Contact" rel="internal"><li class="nav-item">Contact Us</li></a>
-            </ul>
-            </nav>
-    <section id="main" class="main-wrapper">
-        <section class="display-wrapper">
-            <h1 class="quiz-title">Refactored jQuery/Bootstrap Quiz Game! 
-                Test My Knowledge!</h1>
-            <div class="question-display">Question Card Here</div>
-            <div class="right-banner" "correct" "incorrect" "hidden">Wrong!</div>
-            <div class="timer">Timer here</div>
-            
-            <div class="statistics-wrapper">
-                <div class="questions-remaining">X/10 Questions Remaining</div>
-                <div class="statistics-panel">
-                    <ol class="statistics-list">Player Statistics
-                        <li>Total Score: <span class="player-score">356</span></li>
-                        <li>Questions Right: <span class="questions-right">3</span> out of <span class="total-questions">10</span></li>
-                        <li>Wrong Answers Given: <span class="questions-wrong">10</span></li>
-                    </ol>
-                </div>
-                <div class="questions-completed"><img class="questions-completed">Questions Completed</div>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>jQuery Playground - Quiz Game</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LOGO/BRAND</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="todo.html">To-Do List</a>
+                <a class="dropdown-item" href="calculator.html">Calculator</a>
+                <a class="dropdown-item" href="memory.html">Memory Game</a>
+                <a class="dropdown-item" href="quiz.html">Quiz Game</a>
+                <a class="dropdown-item" href="graphs.html">Movable Graphs</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main id="main" class="main-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <section class="display-wrapper">
+                  <h1 class="quiz-title">Refactored jQuery/Bootstrap Quiz Game!
+                      Test My Knowledge!</h1>
+                  <div class="question-display">Question Card Here</div>
+                  <div class="right-banner correct incorrect hidden">Wrong!</div>
+                  <div class="timer">Timer here</div>
+
+                  <div class="statistics-wrapper">
+                      <div class="questions-remaining">X/10 Questions Remaining</div>
+                      <div class="statistics-panel">
+                          <ol class="statistics-list">Player Statistics
+                              <li>Total Score: <span class="player-score">356</span></li>
+                              <li>Questions Right: <span class="questions-right">3</span> out of <span class="total-questions">10</span></li>
+                              <li>Wrong Answers Given: <span class="questions-wrong">10</span></li>
+                          </ol>
+                      </div>
+                      <div class="questions-completed"><img class="questions-completed">Questions Completed</div>
+                  </div>
+              </section>
+              <section class="answers-wrapper">Answer section begins here
+                  <ol>
+                      <li class="answer-a"></li>
+                      <li class="answer-b"></li>
+                      <li class="answer-c"></li>
+                      <li class="answer-d"></li>
+                  </ol>
+              </section>
             </div>
-        </section>
-        <section class="answers-wrapper">Answer section begins here
-            <ol>
-                <li class="answer-a"></li>
-                <li class="answer-b"></li>
-                <li class="answer-c"></li>
-                <li class="answer-d"></li>
-            </ol>
-            
-        
-        </section>
-    </section>
-    
-    <footer>
-    <div class="footer-container">
-        <div class="footer-column">Sweet Logo Will Go Here</div>
-        <div class="footer-column">
-            <ul>    <li>Latest News</li> 
-                    <li>Careers</li> 
-                    <li>Other Text Link Stuff</li>
-            </ul></div>
-        <div class="footer-column"> Third Column</div>    
-        
-    </div>
-    </footer>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div>Sweet Logo Will Go Here</div>
+            </div>
+            <div class="col">
+              <ul>
+                <li>Latest News</li>
+                <li>Careers</li>
+                <li>Other Text Link Stuff</li>
+              </ul>
+            </div>
+            <div class="col"> Third Column</div>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- wrapper -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/quiz.js"></script>
-</body>
-    
+  </body>
 </html>
